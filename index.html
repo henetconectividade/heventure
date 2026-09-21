@@ -146,7 +146,7 @@ header{position:sticky; top:0; z-index:50; background:rgba(24,27,31,.86);
 .kpi-sub .kpi{background:rgba(255,255,255,.03);border:1px solid var(--line);border-radius:12px;padding:16px 15px}
 .kpi-sub .num{font-size:clamp(19px,2.5vw,25px)}
 .kpi-sub .ic{margin-bottom:8px;width:20px;height:20px}
-.presenca{display:flex;align-items:center;gap:12px 30px;flex-wrap:wrap;margin-top:18px;padding:20px 24px;border:1px solid var(--line);border-radius:12px;background:rgba(255,255,255,.02);color:var(--muted);font-size:17px}
+.presenca{display:flex;align-items:center;gap:12px 30px;flex-wrap:wrap;margin-top:18px;padding:20px 24px;border:1px solid transparent;border-radius:12px;box-shadow:inset 0 0 0 1px var(--line);background:rgba(255,255,255,.02);color:var(--muted);font-size:17px}
 .presenca .ic{color:var(--gold);flex:0 0 auto;width:24px;height:24px}
 .presenca b{color:var(--gold);font-family:var(--display);font-weight:700;font-variant-numeric:tabular-nums;margin-right:6px;font-size:1.35em}
 .modal-card .foot{margin-top:22px}
@@ -223,7 +223,7 @@ footer{background:var(--navy-950); border-top:1px solid var(--line); padding-blo
 .reveal .ans{padding:2px 0 24px}
 .reveal .ans>p{color:var(--muted);font-size:15.5px;margin:0 0 12px;max-width:70ch}
 .reveal .ans>p:last-child{margin-bottom:0}
-.reveal .ans h4{font-family:var(--display);color:var(--ink);font-weight:500;font-size:16px;margin:18px 0 8px}
+.reveal .ans h4{font-family:var(--display);color:var(--gold);font-weight:700;font-size:16px;margin:18px 0 8px}
 .reveal .ans h4:first-child{margin-top:2px}
 .dtl{overflow-x:auto;border:1px solid var(--line);border-radius:var(--r)}
 .dtl table{border-collapse:collapse;width:100%;min-width:520px;font-size:14.5px}
@@ -270,7 +270,6 @@ footer{background:var(--navy-950); border-top:1px solid var(--line); padding-blo
       <h2>Por que existimos</h2>
     </div>
     <p class="purpose-statement">Investir, construir e escalar negócios de tecnologia que <span class="gold">resolvem problemas reais</span> de empresas brasileiras.</p>
-    <p class="lead" style="font-size:19px; max-width:64ch; margin-top:20px">Tecnologia boa não é a que impressiona no pitch — é a que resolve. Investimos cedo, no Pré-Seed e no Seed, ao lado de founders que constroem com os pés no chão e de negócios que se sustentam de pé.</p>
     <div class="reveal">
       <details><summary>Por que somos diferentes? <span class="plus">+</span></summary>
         <div class="ans">
@@ -278,7 +277,7 @@ footer{background:var(--navy-950); border-top:1px solid var(--line); padding-blo
           <p>A He-Net nasceu em 2004 e foi construída até se tornar o maior provedor de internet do interior da Bahia. Conhecemos o que não aparece no pitch: a operação que não fecha, o time que precisa ser montado antes de a receita existir, a decisão que precisa ser tomada sem dado suficiente.</p>
           <p>Fundadores tecnicamente fortes costumam levar a empresa sozinhos até onde a própria experiência alcança. A partir dali, o que falta raramente é dinheiro — é percurso. É esse percurso, e não apenas o cheque, que colocamos à disposição.</p>
           <h4>Entregamos mais do que capital</h4>
-          <p>Quando investimos, passamos a fazer parte do time. Colocamos à disposição da investida a infraestrutura e a rede de contatos da He-Net — acesso a mercado que, em estágio inicial, costuma valer mais do que o aporte.</p>
+          <p>Quando investimos, passamos a fazer parte do time. Colocamos à disposição da investida a infraestrutura e a rede de contatos da He-Net, acesso a mercado que, em estágio inicial, costuma valer mais do que o aporte.</p>
           <p>Nossa rede se estende além do Brasil: os sócios mantêm conexões com aceleradoras e investidores internacionais, o que abre caminho de co-investimento e de acesso a mercado para as investidas que buscam operar fora.</p>
           <p>Cada negócio tem seu tempo e sua necessidade. Não aplicamos um modelo único de acompanhamento: adaptamos o suporte ao que a empresa precisa, no estágio em que ela está.</p>
         </div>
@@ -410,7 +409,6 @@ footer{background:var(--navy-950); border-top:1px solid var(--line); padding-blo
       <div class="kpi-hero"><div class="kpi"><svg class="ic" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg><div class="num"><span class="kpinum" data-to="500" data-prefix="+">0</span><span class="suf">mil</span></div><div class="lbl">usuários cadastrados</div></div><div class="kpi"><svg class="ic" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="3"/><path d="m10 9 5 3-5 3z" fill="currentColor" stroke="none"/></svg><div class="num"><span class="kpinum" data-to="30" data-prefix="+">0</span><span class="suf">mi</span></div><div class="lbl">vídeos gerados</div></div><div class="kpi"><svg class="ic" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="2.6"/><circle cx="6" cy="12" r="2.6"/><circle cx="18" cy="19" r="2.6"/><path d="m8.4 13.4 7.2 4.2M15.6 6.4 8.4 10.6"/></svg><div class="num"><span class="kpinum" data-to="120">0</span><span class="suf">mi</span></div><div class="lbl">alcance nas redes</div></div></div>
       <div class="kpi-sub"><div class="kpi"><svg class="ic" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M12 5v14"/><circle cx="12" cy="12" r="2.3"/></svg><div class="num"><span class="kpinum" data-to="900" data-prefix="+">0</span></div><div class="lbl">clientes (arenas parceiras)</div></div><div class="kpi"><svg class="ic" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l2 6 4-14 2 8h6"/></svg><div class="num"><span class="kpinum" data-to="120" data-prefix="+">0</span><span class="suf">mil</span></div><div class="lbl">usuários ativos/mês</div></div><div class="kpi"><svg class="ic" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 9h18M8 2v4M16 2v4"/><path d="m10 13.5 4 2.3-4 2.3z" fill="currentColor" stroke="none"/></svg><div class="num"><span class="kpinum" data-to="1" data-prefix="+">0</span><span class="suf">mi</span></div><div class="lbl">vídeos gerados/mês</div></div><div class="kpi"><svg class="ic" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="2" fill="currentColor" stroke="none"/><path d="M7.8 7.8a6 6 0 0 0 0 8.4M16.2 7.8a6 6 0 0 1 0 8.4M4.9 4.9a10 10 0 0 0 0 14.2M19.1 4.9a10 10 0 0 1 0 14.2"/></svg><div class="num"><span class="kpinum" data-to="12" data-prefix="+">0</span><span class="suf">mil</span></div><div class="lbl">partidas transmitidas</div></div></div>
       <div class="presenca"><svg class="ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.6 2.7 2.6 15.3 0 18M12 3c-2.6 2.7-2.6 15.3 0 18"/></svg><span><b class="kpinum" data-to="8">0</b> países</span><span><b class="kpinum" data-to="96">0</b> estados/regiões</span><span><b class="kpinum" data-to="431">0</b> cidades</span></div>
-      <p class="foot">Não foi só o aporte. Foi <b style="color:var(--ink)">capital + mentoria + rede de conexões</b> trabalhando juntos — o modelo smart money do He-Venture na prática.</p>
     </div>
   </div>
 </div>
@@ -428,7 +426,7 @@ footer{background:var(--navy-950); border-top:1px solid var(--line); padding-blo
         <div class="body">
           <div class="role">Sócio Fundador</div>
           <h3>Helder Araújo</h3>
-          <p>Fundador e CEO da He-Net, maior provedor de internet do interior da Bahia. Mais de 20 anos construindo uma empresa de tecnologia e telecomunicações, com passagem por áreas comercial, engenharia de redes, gestão financeira e governança. Participa de missões de inovação no Brasil e no exterior. À frente do He-Venture, investe em startups e tecnologia.</p>
+          <p>Fundador e CEO da He-Net, maior provedor de internet do interior da Bahia, soma mais de 20 anos à frente de uma trajetória construída nos setores de tecnologia e telecomunicações. Ao longo desse caminho, passou por áreas comerciais, engenharia de redes, finanças e governança, acompanhando de perto a evolução e expansão do negócio. Participa de missões de inovação no Brasil e no exterior, mantendo contato constante com novos mercados, tecnologias e modelos de negócio. No He-Venture, leva essa vivência empreendedora para a construção da tese e para a conexão com novos negócios.</p>
         </div>
       </div>
       <div class="person">
@@ -436,7 +434,7 @@ footer{background:var(--navy-950); border-top:1px solid var(--line); padding-blo
         <div class="body">
           <div class="role">Sócio Fundador</div>
           <h3>Devani Freitas</h3>
-          <p>Sócio da He-Net ao lado de Helder, é investidor, empreendedor e empresário com trajetória nos setores de indústria, serviços e comércio. Graduado em História (UNEB) e com MBA em Gestão Empresarial, traduz sua visão de negócios na capacidade de identificar oportunidades e impulsionar startups.</p>
+          <p>Sócio Diretor da He-Net, investidor, empreendedor e empresário com atuação nos setores de indústria, serviços e comércio. Graduado em História pela UNEB e com MBA em Gestão Empresarial, reúne repertório multidisciplinar e uma leitura ampla sobre negócios, mercado e comportamento. Sua experiência em diferentes segmentos contribui para uma análise mais abrangente de empresas, modelos de negócio e possibilidades de crescimento. No He-Venture, soma essa visão empresarial às decisões do fundo e à leitura de novas oportunidades.</p>
         </div>
       </div>
       <div class="person">
@@ -444,7 +442,7 @@ footer{background:var(--navy-950); border-top:1px solid var(--line); padding-blo
         <div class="body">
           <div class="role">Diretora de Operações</div>
           <h3>Lorena Doria</h3>
-          <p>Diretora de Operações do He-Venture, com mais de oito anos no Grupo He-Net, onde estruturou as áreas de marketing e operações. Une gestão de processos, eficiência operacional e marketing de crescimento — com MBAs pela FGV e pelo IPOG e certificação em tração (G4). É quem transforma estratégia em execução dentro do fundo e das investidas.</p>
+          <p>Diretora de Operações do He-Venture, com mais de oito anos de atuação no Grupo He-Net, onde estruturou as áreas de Marketing e Operações. Une gestão de processos, eficiência operacional e marketing de crescimento, com MBA em Gestão Estratégica e Econômica de Negócios pela Fundação Getulio Vargas (FGV), Certificação Internacional em Marketing Digital pela ESPM e Certificação G4 Traction pelo G4 Educação. É quem transforma estratégia em execução dentro do fundo e das investidas.</p>
         </div>
       </div>
       <div class="person">
@@ -452,7 +450,7 @@ footer{background:var(--navy-950); border-top:1px solid var(--line); padding-blo
         <div class="body">
           <div class="role">Conselho · Tecnologia &amp; Inovação</div>
           <h3>Igor Luiz</h3>
-          <p>Membro do conselho do He-Venture, com mais de 20 anos de experiência no mercado. Agrega ao time um repertório único em tecnologia e inovação, apoiando a avaliação do potencial técnico das investidas e orientando decisões de produto, arquitetura e escala. Sua visão conecta a tese do fundo às tendências que moldam o setor.</p>
+          <p>Membro do conselho do He-Venture, com mais de 20 anos de experiência no mercado e trajetória acadêmica na área de Computação, com ênfase em Redes de Computadores. Atua também como Conselheiro de Tecnologia e Inovação na He-Net. No He-Venture, agrega sua experiência em tecnologia, inovação e infraestrutura para apoiar a avaliação técnica das investidas e orientar decisões relacionadas a produto, arquitetura, escalabilidade e evolução tecnológica.</p>
         </div>
       </div>
     </div>
@@ -475,7 +473,7 @@ footer{background:var(--navy-950); border-top:1px solid var(--line); padding-blo
       <details><summary>O que vocês oferecem além do dinheiro? <span class="plus">+</span></summary>
         <p class="ans">Smart money: mentoria especializada, rede de conexões, parcerias e sinergias comerciais e apoio para captações futuras.</p></details>
       <details><summary>Como é estruturado o investimento? <span class="plus">+</span></summary>
-        <p class="ans">Trabalhamos com mútuo conversível (Pré-Seed / Seed), SAFE (alternativa em rodadas com múltiplos investidores) e equity direto (Seed). O instrumento é definido conforme o estágio e o perfil da rodada, com cheque calibrado e reserva para follow-on.</p></details>
+        <p class="ans">O instrumento é definido conforme o estágio e o perfil da rodada, com cheque calibrado e reserva para follow-on.</p></details>
     </div>
   </div>
 </section>

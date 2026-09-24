@@ -99,24 +99,24 @@ footer{background:var(--navy-950);border-top:1px solid var(--line);padding-block
     <h1>Submit your startup</h1>
     <p class="lead">This is the first step of our selection process. It takes a few minutes and helps us understand whether your business fits our thesis. All information is treated as confidential.</p>
   </div>
-  <!-- Formspree: formulário xoevller -->
-  <form id="insc" action="https://formspree.io/f/xoevller" method="POST">
+  <!-- Envio: Google Apps Script (planilha + e-mail para contato@heventure.com.br) -->
+  <form id="insc" action="https://script.google.com/macros/s/AKfycby5Uj4wgHenV5QwVhaaTv-dje-llf1ykjiuWNDls46VdYaD4mswHE7D997fsIpOFeEp/exec" method="POST">
     <input class="hp" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
     <input type="hidden" name="_subject" value="Nova inscrição (EN) — He-Venture">
-    <input type="hidden" name="99. Idioma do formulário" value="English">
+    <input type="hidden" name="idioma" value="English">
 
     <div class="fs-title">Founder(s)</div>
     <div class="grid">
-      <div class="field"><label for="nome">Full name <span class="req">*</span></label><input id="nome" type="text" name="01. Nome do responsável" required autocomplete="name"></div>
-      <div class="field"><label for="email">Email <span class="req">*</span></label><input id="email" type="email" name="02. E-mail" required autocomplete="email"></div>
-      <div class="field"><label for="tel">Phone / WhatsApp <span class="req">*</span></label><input id="tel" type="tel" name="03. Telefone / WhatsApp" required autocomplete="tel"></div>
-      <div class="field"><label for="linkedin">Founder’s LinkedIn</label><input id="linkedin" type="url" name="04. LinkedIn do fundador" placeholder="https://"></div>
-      <div class="field"><label for="dedic">Founders’ commitment <span class="req">*</span></label><select id="dedic" name="05. Dedicação dos fundadores" required>
+      <div class="field"><label for="nome">Full name <span class="req">*</span></label><input id="nome" type="text" name="nome" required autocomplete="name"></div>
+      <div class="field"><label for="email">Email <span class="req">*</span></label><input id="email" type="email" name="email" required autocomplete="email"></div>
+      <div class="field"><label for="tel">Phone / WhatsApp <span class="req">*</span></label><input id="tel" type="tel" name="telefone" required autocomplete="tel"></div>
+      <div class="field"><label for="linkedin">Founder’s LinkedIn</label><input id="linkedin" type="url" name="linkedin" placeholder="https://"></div>
+      <div class="field"><label for="dedic">Founders’ commitment <span class="req">*</span></label><select id="dedic" name="dedicacao" required>
           <option value="" selected disabled>Select…</option>
           <option value="Integral (full-time)">Full-time</option>
           <option value="Parcial (part-time)">Part-time</option>
         </select></div>
-      <div class="field"><label for="equity">Founders’ equity stake</label><select id="equity" name="06. % de equity com os fundadores">
+      <div class="field"><label for="equity">Founders’ equity stake</label><select id="equity" name="equity">
           <option value="" selected disabled>Select…</option>
           <option>100%</option>
           <option value="75% a 99%">75% to 99%</option>
@@ -127,14 +127,14 @@ footer{background:var(--navy-950);border-top:1px solid var(--line);padding-block
 
     <div class="fs-title">The startup</div>
     <div class="grid">
-      <div class="field"><label for="startup">Startup name <span class="req">*</span></label><input id="startup" type="text" name="07. Nome da startup" required></div>
-      <div class="field"><label for="site">Startup website</label><input id="site" type="url" name="08. Site da startup" placeholder="https://"></div>
-      <div class="field"><label for="cnpj">Company registration number <span class="req">*</span></label><input id="cnpj" type="text" name="09. CNPJ" required placeholder="CNPJ, EIN or equivalent. If none, enter 0"></div>
-      <div class="field"><label for="ano">Year founded <span class="req">*</span></label><input id="ano" type="text" name="10. Ano de fundação" required placeholder="e.g. 2024"></div>
-      <div class="field"><label for="pais">Country <span class="req">*</span></label><input id="pais" type="text" name="11. País" required autocomplete="country-name"></div>
-      <div class="field"><label for="estado">State / region</label><input id="estado" type="text" name="11b. Estado / região"></div>
-      <div class="field"><label for="cidade">City <span class="req">*</span></label><input id="cidade" type="text" name="12. Cidade" required></div>
-      <div class="field"><label for="setor">Sector / vertical <span class="req">*</span></label><select id="setor" name="13. Setor / vertical de atuação" required>
+      <div class="field"><label for="startup">Startup name <span class="req">*</span></label><input id="startup" type="text" name="startup" required></div>
+      <div class="field"><label for="site">Startup website</label><input id="site" type="url" name="site" placeholder="https://"></div>
+      <div class="field"><label for="cnpj">Company registration number <span class="req">*</span></label><input id="cnpj" type="text" name="cnpj" required placeholder="CNPJ, EIN or equivalent. If none, enter 0"></div>
+      <div class="field"><label for="ano">Year founded <span class="req">*</span></label><input id="ano" type="text" name="ano" required placeholder="e.g. 2024"></div>
+      <div class="field"><label for="pais">Country <span class="req">*</span></label><input id="pais" type="text" name="pais" required autocomplete="country-name"></div>
+      <div class="field"><label for="estado">State / region</label><input id="estado" type="text" name="estado"></div>
+      <div class="field"><label for="cidade">City <span class="req">*</span></label><input id="cidade" type="text" name="cidade" required></div>
+      <div class="field"><label for="setor">Sector / vertical <span class="req">*</span></label><select id="setor" name="setor" required>
           <option value="" selected disabled>Select…</option>
           <option>GovTech</option>
           <option>ConTech</option>
@@ -143,13 +143,13 @@ footer{background:var(--navy-950);border-top:1px solid var(--line);padding-block
           <option>FinTech B2B</option>
           <option value="Outro">Other</option>
         </select></div>
-      <div class="field"><label for="modelo">Business model <span class="req">*</span></label><select id="modelo" name="14. Modelo de negócio" required>
+      <div class="field"><label for="modelo">Business model <span class="req">*</span></label><select id="modelo" name="modelo" required>
           <option value="" selected disabled>Select…</option>
           <option>B2B</option>
           <option>B2B2C</option>
           <option value="Outro">Other</option>
         </select></div>
-      <div class="field"><label for="tipo">Type of solution</label><select id="tipo" name="15. Tipo de solução">
+      <div class="field"><label for="tipo">Type of solution</label><select id="tipo" name="tipo">
           <option value="" selected disabled>Select…</option>
           <option>SaaS</option>
           <option>Marketplace</option>
@@ -158,13 +158,13 @@ footer{background:var(--navy-950);border-top:1px solid var(--line);padding-block
           <option value="Serviço">Service</option>
           <option value="Outro">Other</option>
         </select></div>
-      <div class="field"><label for="tech">Is the technology built in-house?</label><select id="tech" name="16. Tecnologia é desenvolvida pelo próprio time?">
+      <div class="field"><label for="tech">Is the technology built in-house?</label><select id="tech" name="tecnologia">
           <option value="" selected disabled>Select…</option>
           <option value="Sim">Yes</option>
           <option value="Parcialmente">Partially</option>
           <option value="Não">No</option>
         </select></div>
-      <div class="field"><label for="func">Number of employees</label><select id="func" name="17. Nº de funcionários">
+      <div class="field"><label for="func">Number of employees</label><select id="func" name="funcionarios">
           <option value="" selected disabled>Select…</option>
           <option value="1 a 3">1 to 3</option>
           <option value="4 a 10">4 to 10</option>
@@ -175,13 +175,13 @@ footer{background:var(--navy-950);border-top:1px solid var(--line);padding-block
 
     <div class="fs-title">Business and traction</div>
     <div class="grid">
-      <div class="field full"><label for="desc">Brief description of what the startup does <span class="req">*</span></label><textarea id="desc" name="18. Breve descrição do que a startup faz" required placeholder="The problem it solves and how."></textarea></div>
-      <div class="field"><label for="clientes">Do you have paying customers? <span class="req">*</span></label><select id="clientes" name="19. Já possui clientes pagantes?" required>
+      <div class="field full"><label for="desc">Brief description of what the startup does <span class="req">*</span></label><textarea id="desc" name="descricao" required placeholder="The problem it solves and how."></textarea></div>
+      <div class="field"><label for="clientes">Do you have paying customers? <span class="req">*</span></label><select id="clientes" name="clientes" required>
           <option value="" selected disabled>Select…</option>
           <option value="Sim">Yes</option>
           <option value="Não">No</option>
         </select></div>
-      <div class="field"><label for="tracao">Current traction</label><select id="tracao" name="20. Tração atual">
+      <div class="field"><label for="tracao">Current traction</label><select id="tracao" name="tracao">
           <option value="" selected disabled>Select…</option>
           <option value="Ainda sem receita">No revenue yet</option>
           <option value="Primeiros clientes">First customers</option>
@@ -189,17 +189,17 @@ footer{background:var(--navy-950);border-top:1px solid var(--line);padding-block
           <option value="ARR de R$ 350 mil a R$ 2 mi">ARR BRL 350K to 2M</option>
           <option value="ARR acima de R$ 2 mi">ARR above BRL 2M</option>
         </select></div>
-      <div class="field"><label for="estagio">Round stage <span class="req">*</span></label><select id="estagio" name="21. Estágio da rodada" required>
+      <div class="field"><label for="estagio">Round stage <span class="req">*</span></label><select id="estagio" name="estagio" required>
           <option value="" selected disabled>Select…</option>
           <option value="Pré-Seed">Pre-Seed</option>
           <option>Seed</option>
           <option value="Outro">Other</option>
         </select></div>
-      <div class="field"><label for="valor">Amount you are raising in this round</label><input id="valor" type="text" name="22. Valor que estão captando nesta rodada" placeholder="e.g. USD 100,000 or BRL 500,000"></div>
-      <div class="field"><label for="valuation">Valuation (post-money, if any)</label><input id="valuation" type="text" name="23. Valuation (post-money, se houver)" placeholder="e.g. USD 600,000"></div>
-      <div class="field"><label for="pitch">Pitch deck link <span class="req">*</span></label><input id="pitch" type="url" name="24. Link do pitch deck" required placeholder="https://"><div class="hint">Public link (Google Drive, OneDrive) to a PDF or PowerPoint. Videos are not accepted here.</div></div>
-      <div class="field"><label for="plano">Business plan link</label><input id="plano" type="url" name="25. Link do plano de negócio" placeholder="https://"></div>
-      <div class="field full"><label for="extra">Anything else you would like to share?</label><textarea id="extra" name="26. Algo mais que queira compartilhar?"></textarea></div>
+      <div class="field"><label for="valor">Amount you are raising in this round</label><input id="valor" type="text" name="valor" placeholder="e.g. USD 100,000 or BRL 500,000"></div>
+      <div class="field"><label for="valuation">Valuation (post-money, if any)</label><input id="valuation" type="text" name="valuation" placeholder="e.g. USD 600,000"></div>
+      <div class="field"><label for="pitch">Pitch deck link <span class="req">*</span></label><input id="pitch" type="url" name="pitch" required placeholder="https://"><div class="hint">Public link (Google Drive, OneDrive) to a PDF or PowerPoint. Videos are not accepted here.</div></div>
+      <div class="field"><label for="plano">Business plan link</label><input id="plano" type="url" name="plano" placeholder="https://"></div>
+      <div class="field full"><label for="extra">Anything else you would like to share?</label><textarea id="extra" name="extra"></textarea></div>
     </div>
 
     <div class="actions">
@@ -224,12 +224,11 @@ footer{background:var(--navy-950);border-top:1px solid var(--line);padding-block
   f.addEventListener('submit',function(e){
     e.preventDefault(); err.hidden=true;
     btn.disabled=true; btn.textContent='Sending…';
-    var fd=new FormData(f), sn=f.querySelector('#startup').value.trim(); fd.set('_subject', f.querySelector('[name=_subject]').value+(sn?': '+sn:'')); fd.set('_replyto', f.querySelector('#email').value);
-    fetch(f.action,{method:'POST',body:fd,headers:{'Accept':'application/json'}})
+    fetch(f.action,{method:'POST',body:new FormData(f),redirect:'follow'})
       .then(function(r){ return r.json().then(function(d){ return {ok:r.ok,d:d}; }); })
       .then(function(res){
-        if(res.ok){ f.hidden=true; document.querySelector('.intro').hidden=true; done.hidden=false; done.focus(); window.scrollTo(0,0); }
-        else{ throw new Error(res.d && res.d.errors ? res.d.errors.map(function(x){return x.message;}).join(' ') : ''); }
+        if(res.ok && res.d && res.d.ok){ f.hidden=true; document.querySelector('.intro').hidden=true; done.hidden=false; done.focus(); window.scrollTo(0,0); }
+        else{ throw new Error(res.d && res.d.error ? res.d.error : ''); }
       })
       .catch(function(ex){
         err.textContent='We couldn’t send your application right now. '+(ex.message?ex.message+' ':'')+'Please try again shortly or email contato@heventure.com.br.';

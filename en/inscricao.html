@@ -253,7 +253,9 @@ footer{background:var(--navy-950);border-top:1px solid var(--line);padding-block
     else if(e.key==='ArrowUp'){e.preventDefault(); links[(i-1+links.length)%links.length].focus();}
   });
   [].forEach.call(links,function(a){a.addEventListener('click',function(){
-    try{localStorage.setItem('hv-lang',a.getAttribute('hreflang'));}catch(err){}
+    var l=a.getAttribute('hreflang');
+    document.cookie='hv-lang='+l+';path=/;max-age=31536000;SameSite=Lax';
+    try{localStorage.setItem('hv-lang',l);}catch(err){}
   });});
 })();
 </script>
